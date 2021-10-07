@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar section */
+
+nav{
+    background-color: #ca0813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-utility{
+    margin: 0.8463541666666666vw 0px;
+}
+nav .mainHamberg .hamberg{
+    display: none;
+}
+nav .nav-list{
+    display: flex;
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1vw;
+    letter-spacing: 0.06510416666666667vw;
+    margin-right: 2.0833333333333335vw;
+}
+nav .nav-list a{
+    text-decoration: none;
+    margin: auto 0.9765625vw;
+    color: white;
+}
+nav .subnav-list{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+nav .subnav-list a{
+    padding: 1vw 3vw;
+    margin: 0px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: black;
+}
+nav .subnav-list a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+nav #SportsProgramming:hover .subnav-list{
+    display: block;
+}
+nav #contact:hover .subnav-list{
+    display: block;
+}
+.nav-utility #logo{
+    width: 23vw;
+    margin-right: 16vw;
+}
+.nav-utility #search,#searchBtn{
+    padding: 5px;
+    font-size: 1vw;
+    margin: auto 0.1953125vw;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: Hp simplified;
+    font-weight: lighter;
+}
+.nav-utility #searchBtn{
+   margin-right: 1vw;
+}
+/* Home section */
+.home-section{
+    position: relative;
+}
+.home-section video{
+    z-index: -1;
+    right: 0;
+    width: 100vw;
+    min-height: 100%;
+}
+.home-section::before{
+    content: "";
+    background: url(./images/logo.png)no-repeat center center/cover;
+    position: absolute;
+    top: 23.528646vw;
+    left: 22.234375vw;
+    width: 52.018229166666664vw;
+    height: 3.90625vw;
+}
+/* Sports section */
+#sportSection{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,209px);
+}
+#sportSection .sports{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    /* width: 380px;
+    height: 209px; */
+}
+#sportSection .sports a{
+    text-decoration: none;
+    color: white;
+}
+#sportSection .not-reachable{
+    font-size: 3.5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Kabbadi::before{
+    content: "";
+    background: url(./images/1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Cricket::before{
+    content: "";
+    background: url(./images/2.png) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Kho-kho::before{
+    content: "";
+    background: url(./images/3.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Pubg::before{
+    content: "";
+    background: url(./images/4.png) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Holleyball::before{
+    content: "";
+    background: url(./images/5.png) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Basketball::before{
+    content: "";
+    background: url(./images/6.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Mall-khamb::before{
+    content: "";
+    background: url(./images/7.png) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+#Football::before{
+    content: "";
+    background: url(./images/8.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 25vw;
+    height: 210px;
+    z-index: -1;
+}
+.sports:hover h1{
+    color: #ca0813;
+    
+}
+.sports:hover{
+    background-color: black;
+    transition: 1s;
+    left: 0;
+}
+.sports:hover a{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+/* footer section */
+footer{
+    background-color:#ca0813 ;
+    padding: 15px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+footer a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+/* Responsive layout */
+@media only screen and (max-width: 769px) {
+    #sportSection{
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(4,209px);
+    }
+    #Kabbadi::before{
+        content: "";
+        background: url(./images/1.jpg) no-repeat center center/cover;
+        position: absolute;
+        width: 50vw;
+        height: 210px;
+        z-index: -1;
+    }
+    #Cricket::before{
+        width: 50vw;
+    }
+    #Kho-kho::before{
+        width: 50vw;
+    }
+    #Pubg::before{
+        width: 50vw;
+    }
+    #Holleyball::before{
+        width: 50vw;
+    }
+    #Basketball::before{
+        width: 50vw;
+    }
+    #Mall-khamb::before{
+        width: 50vw;
+    }
+    #Football::before{
+        width: 50vw;
+    }
+    #sportSection .sports{
+        font-size: 6vw;
+    }
+    footer{
+        padding: 15px;
+        font-size: 2vw;
+    }
+    footer a{
+        font-weight: bold;
+        font-size: 2vw;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 9vw;
+    }
+    .nav-utility #logo {
+        width: 42vw;
+        position: absolute;
+        left: 5vw;
+        top: 3vw;
+    }
+    .nav-utility #search, #searchBtn {
+        display: none;
+    }
+    nav .nav-list {
+        position: absolute;
+        top: 3.5vw;
+        right: 7vw;
+    }
+    nav .nav-list a{
+        font-size: 2vw;
+    }
+    nav .subnav-list {
+        min-width: 63px;        
+    }
+}
