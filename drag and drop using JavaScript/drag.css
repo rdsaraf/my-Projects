@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: rgb(219, 179, 206);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+.imgBox{
+    background: url('IMG_20200225_220509_553.jpg') no-repeat center center/cover;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border-radius: 100px;
+}
+.hold{
+    border: 2px solid red;
+}
+.dashed{
+    background: rgb(255, 0, 170);
+    border-style: dashed;
+}
+.hide{
+    display: none;
+}
